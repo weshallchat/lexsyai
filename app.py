@@ -1,10 +1,5 @@
 # Legal Template Filler – Streamlit App
 # -------------------------------------------------------------
-# This single-file Streamlit app lets you:
-# 1) Upload a .docx legal template
-# 2) Automatically detect placeholders ({{like_this}}, [[LIKE_THIS]], or [ALL_CAPS_TOKEN])
-# 3) Chat to fill each placeholder conversationally
-# 4) Preview the filled document (HTML) and download the final .docx
 #
 # Quick Start (Local):
 #   1) Save this file as app.py
@@ -21,13 +16,6 @@
 #     - Push this file to a public GitHub repo
 #     - Create a new Streamlit app from that repo (main file: app.py)
 #     - The app gets a public URL automatically
-#
-# Notes:
-# - We use three placeholder styles by default:
-#     {{client_name}}  |  [[EFFECTIVE_DATE]]  |  [GOVERNING_LAW]
-# - You can change or extend patterns in PLACEHOLDER_PATTERNS below.
-# - We show a highlighted preview using Mammoth (docx->HTML) + simple regex markup.
-# - Replacement traverses paragraphs, tables, headers/footers for robust coverage.
 #
 # -------------------------------------------------------------
 
