@@ -1,23 +1,4 @@
 # Legal Template Filler – Streamlit App
-# -------------------------------------------------------------
-#
-# Quick Start (Local):
-#   1) Save this file as app.py
-#   2) Create a virtual environment (optional):
-#        python -m venv .venv && source .venv/bin/activate  # (Windows: .venv\\Scripts\\activate)
-#   3) Install deps:
-#        pip install streamlit python-docx mammoth regex
-#   4) Run:
-#        streamlit run app.py
-#   5) Open the local URL shown in your terminal.
-#
-# Free Hosting (Public URL):
-#   * Streamlit Community Cloud (https://streamlit.io/cloud)
-#     - Push this file to a public GitHub repo
-#     - Create a new Streamlit app from that repo (main file: app.py)
-#     - The app gets a public URL automatically
-#
-# -------------------------------------------------------------
 
 import io
 import re
@@ -29,12 +10,7 @@ import streamlit as st
 from docx import Document
 import mammoth
 
-# -----------------------------
-# Configuration
-# -----------------------------
-
 # Regex patterns to detect placeholders in text.
-# Order matters (more specific first). Each pattern MUST capture the placeholder name in group 1.
 PLACEHOLDER_PATTERNS: List[Tuple[str, str]] = [
     (r"\{\{\s*([A-Za-z0-9_\- ]+)\s*\}\}", "double_curly"),        # {{placeholder}}
     (r"\[\[\s*([A-Za-z0-9_\- ]+)\s*\]\]", "double_square"),        # [[PLACEHOLDER]] / [[Client Name]]
