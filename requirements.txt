@@ -1,0 +1,5 @@
+streamlit>=1.36
+python-docx>=0.8.11
+mammoth>=1.6.0
+regex>=2024.7.24
+
