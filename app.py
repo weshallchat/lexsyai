@@ -10,12 +10,7 @@ import streamlit as st
 from docx import Document
 import mammoth
 
-# -----------------------------
-# Configuration
-# -----------------------------
-
 # Regex patterns to detect placeholders in text.
-# Order matters (more specific first). Each pattern MUST capture the placeholder name in group 1.
 PLACEHOLDER_PATTERNS: List[Tuple[str, str]] = [
     (r"\{\{\s*([A-Za-z0-9_\- ]+)\s*\}\}", "double_curly"),        # {{placeholder}}
     (r"\[\[\s*([A-Za-z0-9_\- ]+)\s*\]\]", "double_square"),        # [[PLACEHOLDER]] / [[Client Name]]
